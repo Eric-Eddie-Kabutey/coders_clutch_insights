@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="88" height="88" viewBox="0 0 88 88">
+  <defs>
+    <filter id="Ellipse_8802" x="0" y="0" width="88" height="88" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_130888" data-name="Group 130888" transform="translate(-1089 -9346)">
+    <g transform="matrix(1, 0, 0, 1, 1089, 9346)" filter="url(#Ellipse_8802)">
+      <circle id="Ellipse_8802-2" data-name="Ellipse 8802" cx="35" cy="35" r="35" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <g id="_x30_1._Facebook" transform="translate(1096.6 9360.9)">
+      <path id="Icon_11_" d="M33.093,27.738H29.221c-.626,0-.821-.235-.821-.821V22.185c0-.626.235-.821.821-.821h3.872V17.922A8.687,8.687,0,0,1,34.149,13.5a6.489,6.489,0,0,1,3.481-2.894,8.7,8.7,0,0,1,3.011-.508h3.833c.548,0,.782.235.782.782v4.458c0,.548-.235.782-.782.782-1.056,0-2.112,0-3.168.039a1.412,1.412,0,0,0-1.6,1.6c-.039,1.173,0,2.307,0,3.52h4.537c.626,0,.86.235.86.86v4.732c0,.626-.2.821-.86.821H39.7V40.448c0,.665-.2.9-.9.9H33.914c-.587,0-.821-.235-.821-.821Z" fill="#2f6cef"/>
+    </g>
+  </g>
+</svg>

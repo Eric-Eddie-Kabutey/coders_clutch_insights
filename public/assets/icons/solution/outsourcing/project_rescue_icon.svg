@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="212" height="214" viewBox="0 0 212 214">
+  <defs>
+    <filter id="Rectangle_34044" x="0" y="0" width="212" height="214" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_141810" data-name="Group 141810" transform="translate(-991 -2980)">
+    <g transform="matrix(1, 0, 0, 1, 991, 2980)" filter="url(#Rectangle_34044)">
+      <rect id="Rectangle_34044-2" data-name="Rectangle 34044" width="194" height="196" rx="39" transform="translate(9 6)" fill="#1a3d3c"/>
+    </g>
+    <g id="Group_140935" data-name="Group 140935" transform="translate(-5.863 -372.1)">
+      <path id="analytics" d="M24.765,52.143l16.944-14.83a5.983,5.983,0,1,1,11.6-2.246L66.7,39.756a5.985,5.985,0,0,1,7.4-1.387L89.538,25.178a5.98,5.98,0,1,1,2.8,3.277L76.9,41.646a5.983,5.983,0,1,1-11.623,2.177L51.884,39.134a5.984,5.984,0,0,1-7.338,1.42L27.6,55.384a5.981,5.981,0,1,1-2.837-3.241ZM90.631,40.987a2.706,2.706,0,0,0-2.7,2.7V98.813a2.706,2.706,0,0,0,2.7,2.7h9.1a2.706,2.706,0,0,0,2.7-2.7V43.688a2.706,2.706,0,0,0-2.7-2.7ZM66.7,63.015a2.706,2.706,0,0,0-2.7,2.7V99.378a2.706,2.706,0,0,0,2.7,2.7h9.1a2.706,2.706,0,0,0,2.7-2.7V65.716a2.706,2.706,0,0,0-2.7-2.7ZM42.777,55.107a2.706,2.706,0,0,0-2.7,2.7V99.942a2.706,2.706,0,0,0,2.7,2.7h9.1a2.706,2.706,0,0,0,2.7-2.7V57.808a2.706,2.706,0,0,0-2.7-2.7ZM18.851,78.357h9.1a2.706,2.706,0,0,1,2.7,2.7v19.449a2.706,2.706,0,0,1-2.7,2.7h-9.1a2.706,2.706,0,0,1-2.7-2.7V81.058a2.707,2.707,0,0,1,2.7-2.7Z" transform="translate(1043.863 3395.892)" fill="#fff" fill-rule="evenodd"/>
+      <path id="analytics-2" data-name="analytics" d="M24.765,52.143l16.944-14.83a5.983,5.983,0,1,1,11.6-2.246L66.7,39.756a5.985,5.985,0,0,1,7.4-1.387L89.538,25.178a5.98,5.98,0,1,1,2.8,3.277L76.9,41.646a5.983,5.983,0,1,1-11.623,2.177L51.884,39.134a5.984,5.984,0,0,1-7.338,1.42L27.6,55.384a5.981,5.981,0,1,1-2.837-3.241Z" transform="translate(1043.863 3395.892)" fill="#8bff9d" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

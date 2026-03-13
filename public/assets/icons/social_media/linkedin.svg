@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="88" height="88" viewBox="0 0 88 88">
+  <defs>
+    <filter id="Ellipse_8813" x="0" y="0" width="88" height="88" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_130884" data-name="Group 130884" transform="translate(-1529 -9346)">
+    <g transform="matrix(1, 0, 0, 1, 1529, 9346)" filter="url(#Ellipse_8813)">
+      <circle id="Ellipse_8813-2" data-name="Ellipse 8813" cx="35" cy="35" r="35" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <g id="_x31_0.Linkedin" transform="translate(1546 9360)">
+      <path id="Path_181283" data-name="Path 181283" d="M59.681,57.922V45.8c0-5.955-1.282-10.5-8.23-10.5a7.181,7.181,0,0,0-6.493,3.557h-.083V35.838H38.3V57.922h6.865V46.962c0-2.895.538-5.666,4.094-5.666,3.515,0,3.557,3.267,3.557,5.831V57.88h6.865Z" transform="translate(-16.596 -14.837)" fill="#0d69c6"/>
+      <path id="Path_181284" data-name="Path 181284" d="M11.3,36.6h6.865V58.684H11.3Z" transform="translate(-0.762 -15.599)" fill="#0d69c6"/>
+      <path id="Path_181285" data-name="Path 181285" d="M13.97,10a3.991,3.991,0,1,0,3.97,3.97A3.971,3.971,0,0,0,13.97,10Z" fill="#0d69c6"/>
+    </g>
+  </g>
+</svg>
