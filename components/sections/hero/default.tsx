@@ -36,7 +36,7 @@ export default function Hero() {
               New version of Launch UI is out!
             </span>
             <Link
-              href="/"
+              href={process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}
               className="flex items-center gap-1"
             >
               Get started
@@ -53,10 +53,10 @@ export default function Hero() {
           <div className="relative z-10 flex animate-appear justify-center gap-4 opacity-0 delay-300">
             <div className="relative z-10 flex animate-appear justify-center gap-4 opacity-0 delay-300">
               <Button variant="default" size="lg" asChild>
-                <Link href="/">Get Started</Link>
+                <Link href={process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}>Get Started</Link>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <Link href="/">
+                <Link href={process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}>
                   <Github className="mr-2 h-4 w-4" /> Github
                 </Link>
               </Button>

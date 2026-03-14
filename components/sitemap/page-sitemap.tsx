@@ -44,7 +44,7 @@ function PageSitemap({ sites_maps }: { sites_maps: SiteMapItem[] }) {
                         <Typography
                             typo="body-medium-regular"
                         >This XML Sitemap contains 18 URLs.</Typography>
-                        <Link href="/" className='flex items-center gap-2 text-app-primary-deep hover:text-blue-700'>
+                        <Link href={process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"} className='flex items-center gap-2 text-app-primary-deep hover:text-blue-700'>
                             <MoveLeft size={14} />
                             <span className='text-sm'>Sitemap Index</span>
                         </Link>

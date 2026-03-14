@@ -11,7 +11,7 @@ const NotFound: FC = () => {
                     <h1 className="text-6xl font-bold text-red-600">404</h1>
                     <p className="text-2xl mt-4 mb-6">Oops... Page Not Found</p>
                     <Button variant="default" size="lg" asChild>
-                        <Link href='/' className="bg-app-primary text-[18px] font-medium  p-[16px] rounded-[0.94rem] mt-6">Go Back to Home</Link>
+                        <Link href={process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"} className="bg-app-primary text-[18px] font-medium  p-[16px] rounded-[0.94rem] mt-6">Go Back to Home</Link>
                     </Button>
                 </div>
             </div>

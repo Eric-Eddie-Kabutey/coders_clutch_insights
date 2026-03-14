@@ -146,7 +146,7 @@ export default function Navbar() {
           <NavbarLeft>
             <div id="google_translate_element" className="hidden"></div>
             <Link
-              href="/"
+              href={process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}
               className="sm:w-36 xs:w-28 w-24 h-fit flex items-center gap-2 text-xl font-bold"
             >
               <Image
@@ -236,7 +236,7 @@ export default function Navbar() {
               >
                 <nav className="grid gap-6 text-lg font-medium">
                   <Link
-                    href="/"
+                    href={process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}
                     onClick={handleNavItemClick}
                     className="w-36 h-fit flex items-center gap-2 text-xl font-bold"
                   >

@@ -18,7 +18,7 @@ export default function Navbar() {
         <NavbarComponent>
           <NavbarLeft>
             <Link
-              href="/"
+              href={process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}
               className="flex items-center gap-2 text-xl font-bold"
             >
               <LaunchUI />
@@ -27,11 +27,11 @@ export default function Navbar() {
             <Navigation />
           </NavbarLeft>
           <NavbarRight>
-            <Link href="/" className="hidden text-sm md:block">
+            <Link href={process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"} className="hidden text-sm md:block">
               Sign in
             </Link>
             <Button variant="default" asChild>
-              <Link href="/">Get Started</Link>
+              <Link href={process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}>Get Started</Link>
             </Button>
             <Sheet>
               <SheetTrigger asChild>
@@ -47,25 +47,25 @@ export default function Navbar() {
               <SheetContent side="right">
                 <nav className="grid gap-6 text-lg font-medium">
                   <Link
-                    href="/"
+                    href={process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}
                     className="flex items-center gap-2 text-xl font-bold"
                   >
                     <span>Launch UI</span>
                   </Link>
                   <Link
-                    href="/"
+                    href={process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}
                     className="text-muted-foreground hover:text-foreground"
                   >
                     Getting Started
                   </Link>
                   <Link
-                    href="/"
+                    href={process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}
                     className="text-muted-foreground hover:text-foreground"
                   >
                     Components
                   </Link>
                   <Link
-                    href="/"
+                    href={process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}
                     className="text-muted-foreground hover:text-foreground"
                   >
                     Documentation

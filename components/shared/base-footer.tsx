@@ -31,7 +31,7 @@ function BaseFooter() {
                     </Link>
 
                     {/* Youtube */}
-                    <Link href="/" target="_blank" className="text-gray-300 hover:text-red-700 transition-colors">
+                    <Link href={process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"} target="_blank" className="text-gray-300 hover:text-red-700 transition-colors">
                         <Youtube size={27} />
                     </Link>
 
@@ -41,12 +41,12 @@ function BaseFooter() {
                     </Link>
 
                     {/* Github */}
-                    <Link href="/" target="_blank" className="text-gray-300 hover:text-white transition-colors">
+                    <Link href={process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"} target="_blank" className="text-gray-300 hover:text-white transition-colors">
                         <Github size={25} />
                     </Link>
 
                     {/* Sitemap SVG */}
-                    <Link href="/page-sitemap"  
+                    <Link href={`${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/page-sitemap`}  
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-gray-300 hover:text-blue-500 transition-colors">
@@ -90,29 +90,29 @@ function BaseFooter() {
         <div className='w-full py-6 flex flex-col gap-6 bg-app-primary-deep'>
             <ScrollReveal>
                 <div className="w-full hidden sm:flex justify-center items-center gap-4 text-gray-200 text-[14px]">
-                    <Link href="/cookie-policy" className="hover:text-white transition-colors">Cookie Policy</Link>
+                    <Link href={`${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/cookie-policy`} className="hover:text-white transition-colors">Cookie Policy</Link>
                     <span className=''>|</span>
-                    <Link href="/terms-of-use" className="hover:text-white transition-colors">Terms of Use</Link>
+                    <Link href={`${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/terms-of-use`} className="hover:text-white transition-colors">Terms of Use</Link>
                     <span className=''>|</span>
-                    <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+                    <Link href={`${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/privacy-policy`} className="hover:text-white transition-colors">Privacy Policy</Link>
                     <span className=''>|</span>
-                    <Link href="/ims-policy" className="hover:text-white transition-colors">IMS Policy</Link>
+                    <Link href={`${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/ims-policy`} className="hover:text-white transition-colors">IMS Policy</Link>
                 </div>
             </ScrollReveal>
             <ScrollReveal>
                 <div className="w-fit mx-auto pt-6 sm:hidden flex flex-col items-start gap-4 text-gray-200 text-[14px]">
                     <div className='flex items-center gap-6 '>
-                        <Link href="/cookie-policy"
+                        <Link href={`${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/cookie-policy`}
                             className='pb-3 border-b border-white hover:text-white'
                         >Cookie Policy</Link>
-                        <Link href="/terms-of-use"
+                        <Link href={`${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/terms-of-use`}
                             className='pb-3 border-b border-white hover:text-white'
                         >Terms of Use</Link>
                     </div>
                     <div className='flex items-center gap-6'>
-                        <Link href="/privacy-policy" className="hover:text-white"
+                        <Link href={`${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/privacy-policy`} className="hover:text-white"
                         >Privacy Policy</Link>
-                        <Link href="/ims-policy" className="hover:text-white">IMS Policy</Link>
+                        <Link href={`${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/ims-policy`} className="hover:text-white">IMS Policy</Link>
                     </div>
                 </div>
             </ScrollReveal>
