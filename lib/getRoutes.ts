@@ -40,7 +40,7 @@ export function getRoutes(): SiteMapItem[] {
         route = route.replace(/\\/g, "/").replace(/\/+/g, "/");
 
         const fullUrl =
-          "https://codersclutch.com/" + (route === "" ? "/" : route);
+          `${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}` + (route === "" ? "/" : route);
 
         urls.push({
           id: fullUrl,
