@@ -26,7 +26,7 @@ export const BlogCard = ({ data, shrinkWidth }: BlogCardProps) => {
 
     return (
         <Link
-            href={`/insights/blog/${slug}`}
+            href={`/blog/${slug}`}
             onClick={() => {
                 sessionStorage.setItem('currentBlog', JSON.stringify(data));
             }}

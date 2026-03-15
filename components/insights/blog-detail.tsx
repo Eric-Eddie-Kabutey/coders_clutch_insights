@@ -202,7 +202,7 @@ function BlogDetail() {
             {/* Previous Blog */}
             {prevBlog ? (
               <Link
-                href={`/insights/blog/${prevBlog.slug}`}
+                href={`/blog/${prevBlog.slug}`}
                 onClick={() => sessionStorage.setItem('currentBlog', JSON.stringify(prevBlog))}
                 className='group flex flex-col gap-4 p-12 md:p-20 border-b md:border-b-0 md:border-r border-gray-100 hover:bg-gray-50 transition-colors'
               >
@@ -223,7 +223,7 @@ function BlogDetail() {
             {/* Next Blog */}
             {nextBlog ? (
               <Link
-                href={`/insights/blog/${nextBlog.slug}`}
+                href={`/blog/${nextBlog.slug}`}
                 onClick={() => sessionStorage.setItem('currentBlog', JSON.stringify(nextBlog))}
                 className='group flex flex-col gap-4 p-12 md:p-20 text-right hover:bg-gray-50 transition-colors'
               >

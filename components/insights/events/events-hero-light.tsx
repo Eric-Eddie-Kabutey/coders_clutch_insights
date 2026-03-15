@@ -130,7 +130,7 @@ function EventsHeroLight() {
                             </div>
 
                             {/* CTA Button */}
-                            <Link href={`/insights/event/${featuredEvent.event_slug}`}>
+                            <Link href={`/events/${featuredEvent.event_slug}`}>
                                 <Button
                                     className='w-full bg-gray-900 hover:bg-gray-800 text-white py-6 text-lg font-semibold rounded-lg transition-all duration-300 flex items-center justify-center gap-2'
                                 >

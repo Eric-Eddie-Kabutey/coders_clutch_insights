@@ -103,7 +103,7 @@ function Events() {
                                     </Typography>
                                     <Button
                                         variant="primary"
-                                        onClick={() => router.push(`/insights/blog/${data.event_slug}`)}
+                                        onClick={() => router.push(`/events/${data.event_slug}`)}
                                         className='!py-2 !px-4 font-normal !text-sm rounded-full'
                                     >
                                         <span>Read more</span>

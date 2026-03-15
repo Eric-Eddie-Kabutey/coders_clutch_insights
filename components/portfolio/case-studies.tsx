@@ -15,6 +15,14 @@ function CaseStudies() {
     const [selectedCategory, setSelectedCategory] = useState<string>("All");
     const [showMore, setShowMore] = useState(false);
 
+    // Helper function to convert title to URL-friendly slug
+    const titleToSlug = (title: string): string => {
+        return title
+            .toLowerCase()
+            .replace(/[^a-z0-9]+/g, '-')
+            .replace(/^-+|-+$/g, '');
+    };
+
     const categories = ["All", "Enterprise", "Start up", "Milestone"];
 
     const filteredProjects =
@@ -70,7 +78,7 @@ function CaseStudies() {
                                 >{data.title}</Typography>
                                 <div className='flex items-center gap-3 text-app-secondary'>
                                     <Link
-                                        href={`/portfolio/${data.slug}`}
+                                        href={`${process.env.NEXT_PUBLIC_PORTFOLIO_URL || 'https://portfolio.codersclutch.com'}/${titleToSlug(data.title)}`}
                                         className='text-app-primary-medium'
                                     >
                                         <Send fill='#00312f' />
@@ -103,7 +111,7 @@ function CaseStudies() {
                                     >{data.title}</Typography>
                                     <div className='flex items-center gap-3 text-app-secondary'>
                                         <Link
-                                            href={`/portfolio?tab=caseStudies`}
+                                            href={`${process.env.NEXT_PUBLIC_PORTFOLIO_URL || 'https://portfolio.codersclutch.com'}/portfolio?tab=caseStudies`}
                                             className='text-app-primary-medium'
                                         >
                                             Download

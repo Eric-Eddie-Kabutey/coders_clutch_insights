@@ -65,48 +65,48 @@ export const mobile_nav_links = [
         title: "Website Design",
         icon: Browsers,
         description: "a dlk asldkfj sldfk sldkfjCustom website development that combines stunning aesthetics with seamless functionality to enhance user experience and drive conversions.",
-        href: "/solutions/digital-solutions/website-design"
+        href: `${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/solutions/digital-solutions/website-design`
       },
       {
         id: "2",
         title: "Ecommerce solutions",
         icon: ShoppingCart,
         description: "End-to-end ecommerce platforms with secure payment gateways, inventory management, and personalized shopping experiences.",
-        href: "/solutions/digital-solutions/ecommerce-solutions"
+        href: `${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/solutions/digital-solutions/ecommerce-solutions`
       },
       {
         id: "3",
         title: "UI/UX Design",
         icon: PencilLine,
         description: "Human-centered design solutions that create intuitive digital experiences, improving engagement and customer satisfaction.",
-        href: "/solutions/digital-solutions/ui-ux-design"
+        href: `${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/solutions/digital-solutions/ui-ux-design`
       },
       {
         id: "4",
         title: "Mobile Applications",
         icon: DeviceMobile,
-        href: "/solutions/mobile-applications",
+        href: `${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/solutions/mobile-applications`,
       },
       {
         id: "4",
         title: "Custom Softwares",
         icon: Package,
         description: "From concept to launch, we build scalable digital products that solve real problems and deliver measurable business value.",
-        href: "/solutions/digital-solutions/full-stack-development"
+        href: `${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/solutions/digital-solutions/full-stack-development`
       },
       {
         id: "5",
         title: "Custom AI Dev",
         icon: Code,
         description: "Custom AI solutions including machine learning models, predictive analytics, and intelligent automation for your business.",
-        href: "/solutions/custom-softwares/ai-development"
+        href: `${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/solutions/custom-softwares/ai-development`
       },
       {
         id: "5",
         title: "DevOps CI/CD Services",
         icon: ArrowsClockwise,
         description: "Continuous integration and delivery pipelines that accelerate release cycles while maintaining quality and stability.",
-        href: "/solutions/security-cloud/devops-services"
+        href: `${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/solutions/security-cloud/devops-services`
       },
     ]
   },
@@ -119,14 +119,14 @@ export const mobile_nav_links = [
         id: "1",
         title: "Smart Governance",
         icon: Certificate,
-        href: "/solutions/government-public-sector/smart-governance",
+        href: `${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/solutions/government-public-sector/smart-governance`,
         description: "E-government platforms that digitize public services, enhance transparency, and improve citizen engagement."
       },
       {
         id: "2",
         title: "Digital Health",
         icon: Heart,
-        href: "/solutions/government-public-sector/digital-health",
+        href: `${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/solutions/government-public-sector/digital-health`,
         description: "Integrated healthcare systems including telemedicine platforms, EHR solutions, and public health monitoring tools."
       },
 
@@ -134,21 +134,21 @@ export const mobile_nav_links = [
         id: "3",
         title: "Smart Education",
         icon: BookOpen,
-        href: "/solutions/government-public-sector/smart-education",
+        href: `${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/solutions/government-public-sector/smart-education`,
         description: "Digital learning ecosystems with LMS platforms, virtual classrooms, and educational content management systems."
       },
       {
         id: "4",
         title: "Public Safety",
         icon: Warning,
-        href: "/solutions/government-public-sector/public-safety",
+        href: `${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/solutions/government-public-sector/public-safety`,
         description: "Integrated emergency response systems with real-time monitoring, dispatch coordination, and situational awareness."
       },
       {
         id: "5",
         title: "Data & AI Management",
         icon: ChartPieSlice,
-        href: "/solutions/government-public-sector/data-ai-management",
+        href: `${process.env.NEXT_PUBLIC_MAIN_SITE_URL || "https://codersclutch.com"}/solutions/government-public-sector/data-ai-management`,
         description: "City-wide data platforms with AI analytics for urban planning, resource allocation, and policy decision support."
       },
     ]
@@ -753,7 +753,7 @@ export const nav_links = [
   {
     id: "3",
     nav_name: "Portfolio",
-    href: "https://portfolio.codersclutch.com",
+    href: process.env.NEXT_PUBLIC_PORTFOLIO_URL || "https://portfolio.codersclutch.com",
     title: "Projects",
     sub_title: "Our work speaks for itself",
     description: "Explore our diverse range of successful projects and solutions that demonstrate our technical expertise and creative problem-solving capabilities.",

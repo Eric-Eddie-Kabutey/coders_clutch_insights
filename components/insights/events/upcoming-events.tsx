@@ -68,7 +68,7 @@ function UpcomingEvents() {
                                 key={data.id}
                                 className="group relative flex flex-col justify-start h-auto border-none rounded-lg shadow-md overflow-hidden transition-all duration-500"
                             >
-                                <Link href={`/insights/event/${data.event_slug}`} className="block w-full h-full relative">
+                                <Link href={`/events/${data.event_slug}`} className="block w-full h-full relative">
                                     <motion.div
                                         initial="initial"
                                         whileHover="hover"

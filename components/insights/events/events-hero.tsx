@@ -72,7 +72,7 @@ function EventsHero() {
                                     </Typography>
                                     
                                     <div className='flex gap-4'>
-                                        <Link href={`/insights/event/${event.event_slug}`} >
+                                        <Link href={`/events/${event.event_slug}`} >
                                             <Button
                                                 variant="primary"
                                                 onClick={() => {

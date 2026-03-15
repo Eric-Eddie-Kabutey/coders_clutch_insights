@@ -54,6 +54,15 @@ function InsightsMain() {
         router.replace(`?tab=${value}`, { scroll: false });
     };
 
+    const generateSlug = (title: string) => {
+        return title
+            .toLowerCase()
+            .replace(/[^\w\s-]/g, '')
+            .replace(/\s+/g, '-')
+            .replace(/--+/g, '-')
+            .trim();
+    };
+
     const getTitleText = () => {
         switch (activeTab) {
             case 'blog':
@@ -81,7 +90,7 @@ function InsightsMain() {
                                     {blogContent.slice(0, 3).map((data, index) => (
                                         <CarouselItem key={index} className="pl-1 lg:basis-1/2">
                                             <Link
-                                                href={`/insights/${data.id}`}
+                                                href={`/blog/${generateSlug(data.title)}`}
                                                 type='button'
                                                 onClick={() => {
                                                     sessionStorage.setItem('currentBlog', JSON.stringify(data));
@@ -202,7 +211,7 @@ function InsightsMain() {
                                         </Typography>
 
                                         <div className='flex gap-4'>
-                                            <Link href={`/insights/event/${event.event_slug}`} >
+                                            <Link href={`/events/${event.event_slug}`} >
                                                 <Button
                                                     asChild
                                                     variant="primary"
