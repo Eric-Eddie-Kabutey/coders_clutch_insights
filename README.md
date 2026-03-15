@@ -1,6 +1,6 @@
 # Coders Clutch Insights
 
-Independent Insights project for Coders Clutch (Blog and Events).
+Independent Insights project for Coders Clutch (Blog and Events)..
 
 ## Subdomain
 [insights.codersclutch.com](https://insights.codersclutch.com)
