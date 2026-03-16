@@ -38,6 +38,7 @@ export const BlogCard = ({ data, shrinkWidth }: BlogCardProps) => {
                     src={data.image.src || data.img}
                     alt={data.image.alt || data.title}
                     fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     className='object-cover transition-transform duration-700 group-hover:scale-105'
                 />
                 <div className='absolute top-0 left-0 w-full h-full bg-gradient-to-t from-app-primary-deep/50 to-transparent'></div>

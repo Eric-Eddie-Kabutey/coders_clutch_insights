@@ -45,7 +45,7 @@ function OurCulture() {
     }, [home_culture]);
 
     return (
-        <div className='w-full md:py-32 py-20 bg-gray-100'>
+        <div className='w-full md:py-32 py-20 bg-gray-100 notranslate'>
             <section className='max-container 2xl:w-[85%] w-[95%] mx-auto'>
                 <ScrollReveal>
                     <div className='w-fit sm:pb-10 pb-5 flex flex-col gap-2'>
@@ -96,6 +96,7 @@ function OurCulture() {
                                             alt={`Culture ${data.id}`}
                                             className='object-cover'
                                             fill
+                                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                             priority={selectedCulture === data.id}
                                         />
                                     </Card>

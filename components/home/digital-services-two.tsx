@@ -42,9 +42,12 @@ function DigitalServicesTwo() {
                 <div className='py-4 flex-1 flex flex-col gap-'>
                     {moreServices.map((data, i) => (
                         <ScrollReveal key={data.id} delay={i * 0.15}>
-                            <button          
+                            <div          
                                 className={`w-full p-6 flex flex-col items-start gap-2 cursor-pointer ${activeService.id === data.id ? "bg-white border-2 border-app-primary-medium rounded-lg" : ""}`}
-                                onClick={() => setActiveService(data)}    
+                                onClick={() => setActiveService(data)}
+                                role="button"
+                                tabIndex={0}
+                                onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setActiveService(data); }}
                             >
                                 <Typography
                                     typo="header-5-semibold"
@@ -56,12 +59,12 @@ function DigitalServicesTwo() {
                                     {data.description}
                                 </Typography>
                                 <button className='flex items-center gap-3 font-semibold text-lg text-app-primary-medium'
-                                    onClick={() => router.push(data.href)}
+                                    onClick={(e) => { e.stopPropagation(); router.push(data.href); }}
                                 >
                                     <span>Read more</span>
                                     <ArrowRight size={22} />
                                 </button>
-                            </button>
+                            </div>
                         </ScrollReveal>
                     ))}
                     <Button

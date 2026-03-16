@@ -30,7 +30,7 @@ const Concepts = ({ gallery }: ConceptsProps) => {
                     <div className="flex shrink-0 gap-8 animate-scroll-slow hover:[animation-play-state:paused] w-max">
                         {repeatedImages.map((img, i) => (
                             <div key={`row1-${i}`} className="relative w-[500px] aspect-[16/10] rounded-sm overflow-hidden shadow-sm border border-gray-100 group">
-                                <Image src={img} alt={`Concept ${i}`} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                                <Image src={img} alt={`Concept ${i}`} fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="500px" />
                             </div>
                         ))}
                     </div>
@@ -40,7 +40,7 @@ const Concepts = ({ gallery }: ConceptsProps) => {
                     <div className="flex shrink-0 gap-8 animate-scroll-reverse-slow hover:[animation-play-state:paused] w-max text-right">
                         {repeatedImages.map((img, i) => (
                             <div key={`row2-${i}`} className="relative w-[500px] aspect-[16/10] rounded-sm overflow-hidden shadow-sm border border-gray-100 group">
-                                <Image src={img} alt={`Concept ${i}`} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                                <Image src={img} alt={`Concept ${i}`} fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="500px" />
                             </div>
                         ))}
                     </div>

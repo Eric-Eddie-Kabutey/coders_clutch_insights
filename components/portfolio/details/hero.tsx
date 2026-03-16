@@ -58,6 +58,7 @@ const Hero = ({
                         fill
                         className="object-cover"
                         priority
+                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
                     />
                 </div>
 
@@ -68,6 +69,7 @@ const Hero = ({
                             alt={`${title} mobile preview`}
                             fill
                             className="object-cover"
+                            sizes="(max-width: 768px) 65vw, (max-width: 1024px) 52vw, 50vw"
                         />
                     </div>
                 )}

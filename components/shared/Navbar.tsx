@@ -53,45 +53,49 @@ export default function Navbar() {
       }
     };
 
-    // Prevent multiple initializations
+    // Prevent multiple initializations in the same session
     if (window.googleTranslateInitialized) {
       getCurrentLang();
       return;
     }
 
     const addScript = () => {
-      // Remove any existing scripts first
-      const existingScripts = document.querySelectorAll(
-        'script[src*="translate.google.com"]'
-      );
-      existingScripts.forEach((script) => script.remove());
+      // Check if script already exists
+      if (document.querySelector('script[src*="translate.google.com"]')) {
+        return;
+      }
 
       const script = document.createElement("script");
       script.src =
         "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
       script.async = true;
+      script.onerror = () => {
+        console.error("Google Translate script failed to load");
+        window.googleTranslateInitialized = false;
+      };
       document.body.appendChild(script);
     };
 
     window.googleTranslateElementInit = () => {
-      // Clear any existing instances
-      const existingWidget = document.getElementById(
-        "google_translate_element"
-      );
-      if (existingWidget) {
-        existingWidget.innerHTML = "";
+      // Re-check initialized flag to prevent race conditions from multiple script loads
+      if (window.googleTranslateInitialized) return;
+      
+      try {
+        if (window.google && window.google.translate) {
+          new window.google.translate.TranslateElement(
+            {
+              pageLanguage: "en",
+              includedLanguages: "en,es,fr,de,ja,nl",
+              layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
+              autoDisplay: false,
+            },
+            "google_translate_element"
+          );
+          window.googleTranslateInitialized = true;
+        }
+      } catch (error) {
+        console.error("Error initializing Google Translate:", error);
       }
-
-      new window.google.translate.TranslateElement(
-        {
-          pageLanguage: "en",
-          includedLanguages: "en,es,fr,de,ja,nl",
-          layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE,
-          autoDisplay: false,
-        },
-        "google_translate_element"
-      );
-      window.googleTranslateInitialized = true;
     };
 
     addScript();

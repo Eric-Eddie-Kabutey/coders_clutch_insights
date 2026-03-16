@@ -79,8 +79,10 @@ const Hero = () => {
                                         <div className="w-full mx-auto xl:h-[600px] md:h-[500px] fit">
                                             <Image 
                                                 src={data}
-                                                alt="Mxp"
+                                                alt={`Hero image ${index + 1}`}
                                                 className="w-full h-full object-cover object-top rounded-2xl "
+                                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 80vw"
+                                                priority={index === 0}
                                             />
                                         </div>
                                     </CarouselItem>
@@ -124,6 +126,8 @@ const Hero = () => {
                                         src={partnersLogos}
                                         alt="Partners logo"
                                         className="w-full h-full "
+                                        sizes="(max-width: 768px) 80vw, (max-width: 1200px) 60vw, 50vw"
+                                        priority
                                     />
                                 </div>
                                 {/* <div className="flex-1 overflow-hidden">
